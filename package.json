@@ -7,10 +7,10 @@
   "files": [
     "build/src"
   ],
-  "license": "Apache-2.0",
+  "license": "GPL-3.0",
   "keywords": [],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "mocha build/src/**/*.test.js",
     "check": "gts check",
     "clean": "gts clean",
     "compile": "tsc -p .",
@@ -21,8 +21,14 @@
     "start": "node build/src/index.js"
   },
   "devDependencies": {
+    "@types/chai": "^4.2.0",
+    "@types/mocha": "^5.2.7",
+    "@types/node": "^10.0.3",
     "gts": "^1.1.0",
-    "typescript": "~3.5.0",
-    "@types/node": "^10.0.3"
+    "typescript": "~3.5.0"
+  },
+  "dependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.2.0"
   }
 }
