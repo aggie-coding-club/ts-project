@@ -18,7 +18,7 @@
     "prepare": "npm run compile",
     "pretest": "npm run compile",
     "posttest": "npm run check",
-    "start": "node build/index.js"
+    "start": "node build/src/index.js"
   },
   "devDependencies": {
     "gts": "^1.1.0",
