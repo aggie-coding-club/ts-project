@@ -10,7 +10,7 @@
   "license": "GPL-3.0",
   "keywords": [],
   "scripts": {
-    "test": "mocha build/src/**/*.test.js",
+    "test": "npm run pretest && mocha build/src/**/*.test.js",
     "check": "gts check",
     "clean": "gts clean",
     "compile": "tsc -p .",
